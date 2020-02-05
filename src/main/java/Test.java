@@ -4,6 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.ISelect;
 
 import javax.swing.*;
 import java.util.concurrent.TimeUnit;
@@ -31,8 +32,8 @@ public class Test {
         //driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         Select SortExpensiveHigher = new Select(driver.findElement(By.xpath(".//select[@class='select-css ng-untouched ng-pristine ng-valid']")));
         SortExpensiveHigher.selectByVisibleText("От дорогих к дешевым");
-        WebElement FirstElement = driver.findElement(By.id("104964564"));
-        FirstElement.click();
+       // WebElement FirstElement = driver.findElement(By.id("104964564"));
+       // FirstElement.click();
         //WebElement BuyButton =
 
 
