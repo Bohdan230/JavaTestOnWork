@@ -22,7 +22,6 @@ public class Test {
         driver.manage().window().maximize();
 
         driver.findElement(By.className("menu-toggler")).click();
-
         WebElement LaptopNavigation = driver.findElement(By.linkText("Ноутбуки и компьютеры"));
         Actions builder = new Actions(driver);
         Actions hoverClick = builder.moveToElement(LaptopNavigation).click();
